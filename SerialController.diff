@@ -7,8 +7,6 @@ index 43e9e2a..8336149 100644
                                 LogError("Cannot get the control attributes for %s", m_device.c_str());
 -                               ::close(m_fd);
 -                               return false;
-+                               //::close(m_fd);
-+                               //return false;
                         }
  
                         y |= TIOCM_RTS;
@@ -17,7 +15,5 @@ index 43e9e2a..8336149 100644
                                 LogError("Cannot set the control attributes for %s", m_device.c_str());
 -                               ::close(m_fd);
 -                               return false;
-+                               //::close(m_fd);
-+                               //return false;
                         }
                 }
